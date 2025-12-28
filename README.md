@@ -4,12 +4,6 @@
 
 This is a simple web app that shows real-time weather and local news for a selected city. All API calls happen on the server, so API keys stay safe. The app is responsive and works on both mobile and desktop.
 
----
-
-Вот обновлённая и короткая версия без повторов:
-
----
-
 ### Setup Instructions
 
 1. **Install dependencies:**
@@ -21,8 +15,8 @@ npm install
 2. **Create a `.env` file** in the root folder and add your API keys:
 
 ```env
-OPENWEATHER_API_KEY=your_openweather_key
-NEWS_API_KEY=your_newsapi_key
+OPENWEATHER_API_KEY=your
+NEWS_API_KEY=your
 ```
 
 3. **Start the server:**
