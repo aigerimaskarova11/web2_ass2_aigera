@@ -1,62 +1,68 @@
-Weather & News App
-Project Overview
+# Weather & News App
+
+## Project Overview
 
 This is a simple web app that shows real-time weather and local news for a selected city. All API calls happen on the server, so API keys stay safe. The app is responsive and works on both mobile and desktop.
-Setup Instructions
 
-Install dependencies:
+---
 
+Вот обновлённая и короткая версия без повторов:
+
+---
+
+### Setup Instructions
+
+1. **Install dependencies:**
+
+```bash
 npm install
+```
 
+2. **Create a `.env` file** in the root folder and add your API keys:
 
-Create a .env file in the root folder and add your API keys:
-
+```env
 OPENWEATHER_API_KEY=your_openweather_key
 NEWS_API_KEY=your_newsapi_key
+```
 
+3. **Start the server:**
 
-Start the server:
-
+```bash
 node server.js
+```
 
+4. **Open your browser** and go to:
 
-Open your browser and go to:
-
+```
 http://localhost:3000
+```
 
-API Usage
-1. OpenWeather API
+## API Usage
 
-Used to get real-time weather data for a city.
+### 1. OpenWeather API
 
-Server fetches:
+* Used to get real-time weather data for a city.
+* Server fetches:
 
-Temperature & feels-like temperature
+  * Temperature & feels-like temperature
+  * Weather description
+  * Coordinates
+  * Wind speed
+  * Country code
+  * Rain volume (last 3 hours)
 
-Weather description
+### 2. News API
 
-Coordinates
+* Used to fetch local news for the selected city.
+* Server fetches headlines and description, sends to frontend.
 
-Wind speed
+> All API calls are done on the **server-side only** for security.
 
-Country code
+---
 
-Rain volume (last 3 hours)
+## Key Design Decisions
 
-2. News API
-
-Used to fetch local news for the selected city.
-
-Server fetches headlines and description, sends to frontend.
-
-All API calls are done on the server-side only for security.
-
-Key Design Decisions
-
-Server-side API calls: Keeps API keys hidden and secure.
-
-Clean code: Easy to read, modular, and organized.
-
-Responsive UI: Works well on desktop and mobile using simple CSS media queries.
-
-JSON response: Server sends structured data for frontend to display easily.
+* **Server-side API calls:** Keeps API keys hidden and secure.
+* **Clean code:** Easy to read, modular, and organized.
+* **Responsive UI:** Works well on desktop and mobile using simple CSS media queries.
+* **JSON response:** Server sends structured data for frontend to display easily.
