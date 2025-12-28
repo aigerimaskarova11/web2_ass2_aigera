@@ -49,9 +49,6 @@ http://localhost:3000
 
 * Used to fetch local news for the selected city.
 * Server fetches headlines and description, sends to frontend.
-
-> All API calls are done on the **server-side only** for security.
-
 ---
 
 ## Key Design Decisions
